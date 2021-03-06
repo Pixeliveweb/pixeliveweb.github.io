@@ -1,0 +1,107 @@
+.main-contain{
+    background-color: #202020;  
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 120px 0 120px 10%; 
+    padding: 20px;
+}
+
+.main-contain>a{
+    overflow: hidden;
+    display: table;
+    flex: 1 1 180px;
+    position: relative; 
+    border-radius: 3px;
+    box-shadow: 0 6px 3px #191919;  
+    background-color: #191919;
+    min-width: 180px;
+    min-height: 180px;
+    margin: 10px;
+    border: 1px dashed #888;
+    overflow: hidden;
+    transition: all 1s ease;
+    align-items: center;
+}
+
+.main-contain>a:hover {
+    box-shadow: 0 0 10px #194994;
+}
+
+.main-contain>a:hover>i{
+    transform: rotateY(180deg);
+}
+
+.main-contain>a:hover>p{
+    transform: rotateY(360deg);
+}
+
+.main-contain>a>p{
+    display: table-cell;
+    color: #ccc;
+    padding: 15px;
+    width: 100%;
+    max-height: 100%;   
+    text-align: center;
+    vertical-align: middle;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transition: all 0.5s linear;
+}
+
+.contain-red-1> p{
+    background: #344c80;
+}
+
+.contain-red-2 p{
+    background: #881353;
+}
+
+.contain-red-3 p{
+    background: #089429;
+}
+
+.contain-red-4 p{
+    background: #9c2621;
+}
+
+.contain-red-5 p{
+    background: #a88211;
+}
+
+.main-contain>a>i{
+    display: table-cell;
+    position: absolute;
+    color: #ccc;
+    font-size: 100px;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    left: 0%;
+    margin-top: -45px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transition: all 0.5s linear;
+}
+
+
+@media only screen and (max-width: 900px){
+    .main-contain{
+        width: 90%;
+        margin-left: 5%; 
+        padding: 10px;
+    }
+
+    .main-contain>a{
+        flex: 1 1 100px;
+        min-width: 25%;
+        min-height: 150px;
+        margin: 8px;
+    }
+
+    .main-contain>a>i{
+        font-size: 80px;
+        margin-top: -37px;
+    }
+}
