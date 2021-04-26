@@ -1,0 +1,413 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background: #222222;
+}
+
+.contain{
+    max-width: 220px;
+    height: 100vh;
+    position: fixed;
+    left: -100px;
+    top: 50px;
+    background: #191919;
+    box-shadow: 2px 0px 3px #191919;
+    transition: all 0.5s;
+    z-index: 400;
+}
+
+.main{
+    min-height: calc(100vh - 300px);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imagen{
+    width: 40px;    
+    height: 40px;
+    transition: all 1.2s 0.2s;
+    margin: 80px 5px;
+}
+
+.profile a{
+    border-radius: 100%;
+}
+
+.imagen img{
+    border-radius: 50%;
+}
+
+.profile{
+    border-bottom: 2px solid #181818;
+    overflow: hidden;
+}
+
+div.last{
+    border-bottom: 2px solid #181818;
+}
+
+.profile-text{
+    position: relative;
+    color: #ccc0;
+    font-size: 20px;
+    text-align: center;
+    margin: -10px 0px 20px -100px;
+    transition: all 1.2s 0.2s, color .5s;
+}
+
+.logos2{
+    position: absolute;
+    top: -50px;
+    right: 100px;
+    height: 60px;
+    transition: 0.5s ease;
+}
+
+.extrawe{
+    height: 100px;
+}
+
+.logos2, .we2, .logo2, .text2 {
+    display: inline-block;
+    color: #ccc;
+    font-size: 16px;
+}
+.we2 a:hover .logo2,.we2 a:hover  .text2{
+    color: #ececec;
+}
+
+.text2{
+    margin: 17px 0px 17px 10px;
+}
+
+.we2 a{
+    cursor: pointer;
+}
+
+.we2{
+    margin-left: 40px;
+}
+
+.logo{
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    z-index: 100;
+    color: #ccc;
+    padding: 16px 0px;
+    font-size: 18px;
+    font-weight: 18px;
+    text-align: center;
+}
+
+.redius-bot-right{
+    border-bottom-right-radius: 60%;
+}
+
+.seccion{
+    position: relative;
+    height: 0px;
+    left: -300px;
+    transition: background 1s, height 1s 0.3s, left 1s;
+}
+
+.mostrar-nav:hover .nav-sec{
+    height: 150px;
+    left: 0px;
+    transition: background 1s 0.5s, height 1s, left 1s 0.3s;
+    background: #947b27;
+}
+
+.black{
+    background: #131313;
+}
+
+.nav-sec .we:hover{
+    background: #a78b30;
+}
+
+.menu-bar{
+    font-size: 20px;
+    padding: 15px 15px;
+    background: #191919;
+    z-index: 200;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+
+.mostrar-bar{
+    top: 0;
+}
+
+.fa-bars{
+    cursor: pointer;
+}
+
+.nav-m{
+    width: 60px;
+    position: absolute;
+    color: #ccc0;
+    height: 50px;
+    top: -1200px;
+    left: 88px;
+    font-size: 20px;
+    padding: 15px 0px;
+    text-align: center;
+    transition: all 1.2s 0.2s, color 0.4s;
+}
+
+.mostrar-nav:hover a .we .text{
+    margin-left: 40px;
+    color: #ccc;
+    transition: all 1.2s, color 0.4s .6s;
+}
+
+.mostrar-nav:hover .profile-text{
+    color: #ccc;
+    margin-left: 0px;
+    transition: all 1.2s, color 0.4s .6s;
+}
+
+.mostrar-nav:hover .imagen{ 
+    width: 150px;
+    height: 150px;  
+    margin: 25px 35px;
+    transition: all 1s;
+}
+
+.mostrar-nav{
+    margin-left: 100px;
+    transition: all 0.5s;
+}
+
+.nav-text{
+    position: absolute;
+    display: inline-block;
+    width: 240px;
+    left: 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+.text{
+    position: relative;
+    width: 180px;
+    height: 50px;
+    z-index: 10;
+    margin-left: -150px;
+    color: #1d1d1d00;
+    padding: 17px 0px 17px 20px;
+    transition: all 1.2s 0.2s, color .5s;
+}
+
+h3{
+    font-size: 0.9em;
+}
+
+.header{
+    background: transparent;
+    box-shadow: 0px 0px 0px transparent;
+    transition: all 0.5s linear;
+}
+
+.menu-t{
+    background: #191919;
+    box-shadow: 0px 2px 3px #191919;
+}
+
+#header{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0px;
+    z-index: 43;
+}
+
+.we:hover{
+    background: #131313;
+    cursor: pointer;
+}
+
+.active{
+    background:#1f8188;
+}
+
+.active:hover{
+    background: #2ca0a8;
+}
+
+.seccion .active{
+    background: #222222;
+}
+
+.seccion .active:hover{
+    background: #161616;
+}
+
+footer{
+    position: relative;
+    height: 300px;
+    width: 100%;
+    left: 0%;
+    bottom: 0;
+    background: #202020;
+    z-index: 40;
+    border-top: 1px solid #181818;
+    color: #ccc;
+}
+
+.extra{
+    height: 70px;
+}
+
+div.img img{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 8%;
+    min-width: 100px;
+    margin: 30px auto 10px;
+}
+
+div.img p{
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+}
+
+.redes{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 30%;
+    min-width: 280px;
+    top: 170px;
+    margin: 15px auto;
+}
+
+.redes ul li{
+    float: left;
+    text-align: center;
+    list-style: none;
+    width: 5%;
+    padding: 16px 3.5px;
+    margin: 0 10%;
+}
+
+.logor{
+    color: #ccc;
+    font-size: 20px;
+    padding: 0;
+    
+}
+
+div.copyright p{
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+}
+
+.text_color{
+    color: #ccc;
+}
+
+*::-webkit-scrollbar {
+    width: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #414141;
+    border-radius: 8px;
+    border: 1px solid #111111; 
+}
+
+.swal2-styled:focus{
+    box-shadow: none !important;
+}
+
+.swal2-timer-progress-bar{
+    background:  #947b27 !important;
+}
+
+
+
+
+
+*::-webkit-scrollbar-track {
+    background: #1d1d1d;
+    border-radius: 6px;
+}
+
+
+@media only screen and (max-width: 900px){
+    .contain{
+        left: -300px;
+        overflow: auto; 
+        max-width: 400px;
+    }
+
+    .contain .profile-text{
+        color: #1d1d1d
+    }
+
+    .mostrar-nav .nav-m{
+        top: -50px;
+        left: 58px;
+        color: #ccc;
+        transition: all 1.2s, color 0.4s 0.6s;
+    }
+
+    .mostrar-nav a .we .text{
+        margin-left: 40px;
+        color: #ccc;
+        transition: all 1.2s, color 0.4s 0.6s;
+    }
+
+    .mostrar-nav{
+        left: 0px;
+        margin-left: 0;
+    }
+
+    .mostrar-nav .profile-text{
+        color: #ccc;
+        margin-left: 0px;
+        transition: all 1.2s, color 0.4s 0.6s;
+    }
+    
+    .mostrar-nav .imagen{ 
+        width: 150px;
+        height: 150px;  
+        margin: 25px 45px;
+        transition: all 1.2s;
+    }
+
+    .mostrar-nav:hover .imagen{
+        margin: 25px 45px;
+    }
+    
+    .text2{
+        display: none;
+    }
+
+    .logo2{
+        margin: 15px 0px 15px 10px;
+        font-size: 20px;
+    }
+
+    .logos2{
+        right: 40px;
+    }
+
+    .we2{
+        margin-left: 20px;
+    }
+
+}
