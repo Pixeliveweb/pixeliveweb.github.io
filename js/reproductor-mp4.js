@@ -4,7 +4,7 @@ function abrirRepro(){
     var location;
     var url = document.querySelector(".video.activo .link");
     if(url.id === "local"){
-        location =  '<video class = "video-repro-local" src="videos/' + url.innerHTML + '"controls controlslist="nodownload" autoplay></video>';
+        location =  '<video class = "video-repro-local" width="20%" max-height="90vh" src="videos/' + url.innerHTML + '"controls controlslist="nodownload" autoplay></video>';
     }else{
         location = '<iframe class = "video-repro-online" width="100%" height="400px" src="https://www.youtube.com/embed/' + url.innerHTML + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
     }

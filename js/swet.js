@@ -2,7 +2,7 @@ $(".text_secf").on("click",function(){
     document.getElementById("img_secf").src="img/relojS.png";
     Swal.fire({
         icon: 'info', 
-        html: '<h3 class="text_color">¡No olvides escucharnos todos los domingos a las 10 AM por la radio Universidad de Pamplona 94.9 Fm! ;)</h3>', 
+        html: '<h3 class="text_color">¡Todos los domingos a las 9:30 A.m. por la Radio Universidad de Pamplona, 94.9 F.m, TE ESPERAMOS!</h3>', 
         background : 'rgb(35 35 35)',
         padding: '2rem',
         timer: 6000,
